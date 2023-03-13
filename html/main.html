@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Design Elements</title>
+
+    <!-- ------------favicon--------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="../css/home.css">
+    <script defer src="../scroll.js"></script>
+    <!-- <script src="https://cdn.lordicon.com/ritcuqlt.js"></script> -->
+</head>
+
+<body>
+    <img src="../img/menu.png" alt="menu button" id="menu-icon">
+    <nav class="top-nav" id="menuBox">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="our_work.html">Our Work</a></li>
+            <li><a href="what_we_do.html">What We Do</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+        <a href="contact_us.html">
+            <!-- <a href="..\1026_project1\gym.html"> -->
+            <button type="button" action="">Contact Us</button>
+        </a>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="side-nav">
+                <a href="main.html">
+                    <img src="../img/logo.png" alt="company logo" class="logo" id="side-navLogo">
+                </a>
+                <a href="#" id="side-navDesc">SHUBHAM SABOO</a>
+            </div>
+
+            <div class="text-box">
+                <!-- <p>WE HELP YOU TO</p> -->
+                <p>&nbsp; WE CAN HELP YOU</p>
+                <h1>Design Your Journey</h1>
+                <div class="icon">
+                    <img src="../img/arrow.png" alt="arrow">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slides slide1">
+            <img src="../img/478-computer-display-gradient.gif" alt="a picture" class="hidden">
+            <h2 class="hidden">i'am a web Designer.</h2>
+        </div>
+
+        <div class="slides slide2">
+            <img src="../img/1315-computer-mouse-gradient.gif" alt="a picture" class="hidden">
+            <h2 class="hidden">i develop web and mobile apps.</h2>
+        </div>
+
+        <div class="slides slide3">
+            <img src="../img/1141-email-gradient.gif" alt="a picture" class="hidden">
+            <div class="slide3-text">
+                <h2 class="hidden">contact me</h2>
+                <h3 class="hidden">&nbsp;shubhamsaboo789@gmail.com.</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuBox=document.getElementById('menuBox');
+        let menuIcon=document.getElementById('menu-icon');
+        let sidenavIcon=document.getElementById('side-navLogo');
+
+        menuIcon.onclick=()=>{
+            menuBox.classList.toggle('open-menu');
+            if (menuBox.classList.contains('open-menu')) {
+                menuIcon.src='../img/close.png';
+            }
+            else{
+                menuIcon.src='../img/menu.png';
+            }
+        }
+        sidenavIcon.onclick=()=>{
+
+        }
+        // var actual_width=screen.width;
+        // if (actual_width<768) {
+        //     sidenavIcon.src='img/menu.png'; 
+        //     console.log('it fired');   
+        // }
+        // else{
+        //     sidenavIcon.src='img/logo.png';     
+        //     console.log('did not fire');
+        // }
+    </script>
+</body>
+
+</html>
+<!-- 192.168.42.246 -->
+<!-- 192.168.42.246 -->

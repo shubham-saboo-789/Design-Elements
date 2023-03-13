@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ------------favicon--------- -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/about_us.css">
+</head>
+<body>
+    <img src="../img/menu.png" alt="menu button" id="menu-icon">
+    <nav class="top-nav" id="menuBox">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="our_work.html">Our Work</a></li>
+            <li><a href="what_we_do.html">What We Do</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+        <a href="contact_us.html">
+            <!-- <a href="..\1026_project1\gym.html"> -->
+            <button type="button" action="">Contact Us</button>
+        </a>
+    </nav>
+    <div class="container">
+        <div class="header"></div>
+    </div>
+    <script>
+        let menuBox=document.getElementById('menuBox');
+        let menuIcon=document.getElementById('menu-icon');
+        // let sidenavIcon=document.getElementById('side-navLogo');
+
+        menuIcon.onclick=()=>{
+            menuBox.classList.toggle('open-menu');
+            if (menuBox.classList.contains('open-menu')) {
+                menuIcon.src='../img/close.png';
+            }
+            else{
+                menuIcon.src='../img/menu.png';
+            }
+        }
+    </script>
+</body>
+</html>
